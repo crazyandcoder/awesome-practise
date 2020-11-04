@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_default">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/include_home_my_top"></include>
+
+            <LinearLayout
+                android:id="@+id/name_l"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/white_corner_10_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/common_blue"
+                    android:textStyle="bold"
+                    tools:text="hi，造物主" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <include layout="@layout/include_home_my_common"></include>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

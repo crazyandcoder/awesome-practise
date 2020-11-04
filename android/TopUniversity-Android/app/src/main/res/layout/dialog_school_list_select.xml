@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_dialog_top_corner_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/close_fl"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_margin="16dp"
+        android:background="@drawable/close_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_close" />
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="2dp"
+        android:text="省份地区"
+        android:textColor="@color/common_blue"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <com.ihidea.multilinechooselib.MultiLineChooseLayout
+        android:id="@+id/province_tag_flowLayout"
+        style="@style/ProvinceTagFlowLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/school_img" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="2dp"
+        android:text="高校类别"
+        android:textColor="@color/common_blue"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <com.ihidea.multilinechooselib.MultiLineChooseLayout
+        android:id="@+id/school_985211_flowLayout"
+        style="@style/ProvinceTagFlowLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/school_img"
+        app:item_multiChooseable="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="2dp"
+        android:text="学校类别"
+        android:textColor="@color/common_blue"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <com.ihidea.multilinechooselib.MultiLineChooseLayout
+        android:id="@+id/school_type_flowLayout"
+        style="@style/ProvinceTagFlowLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/school_img" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="2dp"
+        android:text="办学类型"
+        android:textColor="@color/common_blue"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <com.ihidea.multilinechooselib.MultiLineChooseLayout
+        android:id="@+id/school_banxue_flowLayout"
+        style="@style/ProvinceTagFlowLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/school_img"
+        app:item_multiChooseable="false" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/reset_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/left_group_selected_bg"
+            android:gravity="center"
+            android:text="重置"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/confirm_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/right_group_normal_bg"
+            android:gravity="center"
+            android:text="确认"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

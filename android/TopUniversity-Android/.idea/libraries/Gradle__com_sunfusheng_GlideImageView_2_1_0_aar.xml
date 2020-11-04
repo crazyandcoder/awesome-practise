@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.sunfusheng:GlideImageView:2.1.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b3ba755fb0cdf4ee3012c80310e53365/jetified-GlideImageView-2.1.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b3ba755fb0cdf4ee3012c80310e53365/jetified-GlideImageView-2.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b3ba755fb0cdf4ee3012c80310e53365/jetified-GlideImageView-2.1.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sunfusheng/GlideImageView/2.1.0/3736528083c1701935f44edc3d515842b7803489/GlideImageView-2.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sunfusheng/GlideImageView/2.1.0/28f379bcbce844eaece4b2a0bb87f7948bb4d828/GlideImageView-2.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

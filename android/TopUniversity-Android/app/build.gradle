@@ -1,0 +1,121 @@
+apply plugin: 'com.android.application'
+android {
+
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+    useLibrary 'org.apache.http.legacy'
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.crazyandcoder.top.university"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        testInstrumentationRunner rootProject.ext.dependencies["androidJUnitRunner"]
+        multiDexEnabled true
+
+
+    }
+
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "String", "BUGLY_ID", '"8b263d92e4"'
+            buildConfigField("String", "HOST", '"http://192.168.6.41:8080"')
+            minifyEnabled false
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "String", "BUGLY_ID", '"3e2b7b89e7"'
+            buildConfigField("String", "HOST", '"http://192.168.6.41:8080"')
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+        }
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+        disable "ResourceType"
+        abortOnError false
+    }
+
+    applicationVariants.all {
+        //判断是release还是debug版本
+        def buildType = it.buildType.name
+        def fileName
+        //下面的channel是获取渠道号，你获取渠道号不一定会和我的代码一样，因为有可能你的渠道名称的规则和我的不一样，我的规则是${渠道名}-${applicationId},所以我是这样取的。
+        //获取当前时间的"YYYY-MM-dd"格式。
+        def createTime = new Date().format("YYYY-MM-dd", TimeZone.getTimeZone("GMT+08:00"))
+        //只对Release包起作用，如果不是Release包则不变更输出路径，否则可能导致AS无法自动安装debug包。
+        if (buildType == "release") {
+            it.getPackageApplication().outputDirectory = new File(project.rootDir.absolutePath + "/apks/${createTime}")
+        }
+        it.outputs.each {
+            //只对Release包起作用，如果不是Release包则不变更名称。
+            //我此处的命名规则是：渠道名_项目名_版本名_创建时间_构建类型.apk
+            fileName = "上大学_${defaultConfig.versionName}_${createTime}-${buildType}.apk"
+            //将名字打印出来，以便及时查看是否满意。
+            println "文件名：${fileName}"
+            //重新对apk命名。(适用于Gradle4.0以下版本)
+            //it.outputFile = new File(it.outputFile.parent, fileName)
+            //重新对apk命名。(适用于Gradle4.0（含）以上版本)如果你Gradle版本是4.0以下版本则将上面的一行代码放开并注释下面的这一行。
+            it.outputFileName = fileName
+        }
+    }
+
+}
+
+dependencies {
+    api project(path: ':lib-common')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
+    //view
+    annotationProcessor(rootProject.ext.dependencies["butterknife-compiler"]) {
+        exclude module: 'annotation'
+    }
+
+}
+project.afterEvaluate {
+    project.android.applicationVariants.all { variant ->
+        variant.assemble.doFirst {
+            final String ANSI_GREEN = "\u001B[32m";
+            def apkPath = buildDir.getAbsolutePath() + "/outputs/apk/" + variant.dirName + "/" + variant.mergedFlavor.versionName + "-" + variant.buildType.name.toString() + ".apk"
+            println(ANSI_GREEN +
+                    "╔══════════════════本次打包信息══════════════════╗" + "\n" +
+                    "║  项目名：" + "上大学" + "\n" +
+                    "║  包名： " + variant.applicationId + "\n" +
+                    "║  版本名称：" + variant.mergedFlavor.versionName + "\n" +
+                    "║  版本号：" + variant.mergedFlavor.versionCode + "\n" +
+                    "║  编译类型：" + variant.buildType.name + "\n" +
+                    "║  apk路径：" + apkPath + "\n" +
+                    "╚══════════════════本次打包信息══════════════════╝" +
+                    ANSI_GREEN)
+            //1.先实例化一个Properties对象
+            Properties properties = new Properties();
+            String path = getRootDir().absolutePath + "/local.properties"
+            //3.读取到配置文件,并加载在Properties中
+            InputStreamReader reader = new InputStreamReader(new FileInputStream(path), "utf-8");
+            properties.load(reader);
+            //4.将需要修改的键值对,或者新增的键值对,写入到properties中(此处与直接追加操作相同)
+            OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(path), "utf-8");
+            properties.setProperty("apk.path", apkPath);
+            //5.调用properties中的存储方法
+            properties.store(writer, "apk-path");
+            reader.close();
+            writer.close()
+
+        }
+    }
+}

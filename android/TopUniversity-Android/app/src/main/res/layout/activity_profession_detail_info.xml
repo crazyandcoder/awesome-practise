@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/C_F6F6F6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/include_profession_detail_basicinfo"></include>
+
+        <include layout="@layout/include_profession_detail_impress"></include>
+
+        <include layout="@layout/include_profession_detail_info"></include>
+
+        <include layout="@layout/include_profession_detail_course"></include>
+
+        <include layout="@layout/include_profession_detail_job"></include>
+
+        <include layout="@layout/include_profession_detail_statistic"></include>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

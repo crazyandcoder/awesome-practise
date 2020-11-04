@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: me.jessyan:rxerrorhandler:2.1.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/89bfa039933639e4ecb30ba5f578ed17/jetified-rxerrorhandler-2.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/89bfa039933639e4ecb30ba5f578ed17/jetified-rxerrorhandler-2.1.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.jessyan/rxerrorhandler/2.1.1/fd9804f6f19818d8e0ead178a398c7f2ce887dfc/rxerrorhandler-2.1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.jessyan/rxerrorhandler/2.1.1/28aacdcfd3ff8291102092ea10e3e8377b8032eb/rxerrorhandler-2.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

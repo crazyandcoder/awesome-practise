@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.zhy:autolayout:1.4.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc18b1ddbf546be685eb229706464754/jetified-autolayout-1.4.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc18b1ddbf546be685eb229706464754/jetified-autolayout-1.4.5/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zhy/autolayout/1.4.5/c66fd477bd4da8f3b864565457a8f92a426b75f1/autolayout-1.4.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zhy/autolayout/1.4.5/dffc7b1642b42864ae590a0697200ca663d0c686/autolayout-1.4.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

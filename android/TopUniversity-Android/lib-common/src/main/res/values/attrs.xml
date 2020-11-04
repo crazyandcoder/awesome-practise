@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CommonCrazyRecyclerView">
+        <attr name="common_dividerColor" format="color" />
+        <attr name="common_dividerRecHeight" format="dimension" />
+        <attr name="common_dividerLeftMargin" format="dimension" />
+        <attr name="common_dividerRightMargin" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CommonMultipleStatusView">
+        <attr name="commonLoadingView" format="reference" />
+        <attr name="commonErrorView" format="reference" />
+        <attr name="commonEmptyView" format="reference" />
+        <attr name="commonNoNetworkView" format="reference" />
+        <attr name="commonContentView" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="common_base_toolbar">
+        <attr name="common_toolbar_title" format="string" />
+        <attr name="common_toolbar_style" format="integer" />
+
+    </declare-styleable>
+
+    <declare-styleable name="common_CardView">
+        <attr name="common_bg_alpha" format="float" />
+        <attr name="common_bg_corners" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonEditext">
+        <attr name="common_my_input_type" format="string" />
+        <attr name="common_my_hint" format="string" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="Banner">
+        <attr name="banner_loop_time" format="integer" />
+        <attr name="banner_auto_loop" format="boolean" />
+        <attr name="banner_infinite_loop" format="boolean" />
+
+        <!--RoundLinesIndicator、RectangleIndicator-->
+        <attr name="banner_indicator_height" format="dimension"/>
+        <attr name="banner_indicator_radius" format="dimension"/>
+
+        <!-- 以下为公用属性 -->
+        <attr name="banner_indicator_selected_width" format="dimension"/>
+        <!--CircleIndicator-->
+        <attr name="banner_indicator_normal_width" format="dimension"/>
+        <attr name="banner_indicator_space" format="dimension"/>
+
+        <attr name="banner_indicator_normal_color" format="reference|color"/>
+        <attr name="banner_indicator_selected_color" format="reference|color"/>
+        <attr name="banner_indicator_margin" format="dimension"/>
+        <attr name="banner_indicator_marginLeft" format="dimension"/>
+        <attr name="banner_indicator_marginTop" format="dimension"/>
+        <attr name="banner_indicator_marginRight" format="dimension"/>
+        <attr name="banner_indicator_marginBottom" format="dimension"/>
+
+        <attr name="banner_indicator_gravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+
+        <attr name="banner_orientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="banner_radius" format="dimension"/>
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_default">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <!--    顶部介绍详情-->
+        <include layout="@layout/include_school_detail_head"></include>
+
+        <!--   学校简介-->
+        <include layout="@layout/include_school_detail_jianjie"></include>
+
+
+        <!--    招生办-->
+        <include layout="@layout/include_school_detail_connect"></include>
+
+        <!--    科研实力-->
+        <include layout="@layout/include_school_detail_keyan"></include>
+
+        <!--    校园风光-->
+        <include layout="@layout/include_school_detail_pictures"></include>
+
+        <!--    地图导航-->
+        <include layout="@layout/include_school_detail_router"></include>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

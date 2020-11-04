@@ -1,0 +1,226 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#ffffff</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="colorPrimary">#ffffff</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="home_linearlayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="home_linearlayout_img">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="home_linearlayout_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/common_text_content</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SchoolTagFlowLayoutStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="item_textColor">#666666</item>
+        <item name="item_textSize">12sp</item>
+        <item name="item_backgroundColor">#ffffff</item>
+        <item name="item_selectedTextColor">#ffffff</item>
+        <item name="item_selectedBackgroundColor">#7289ff</item>
+        <item name="item_radius">0dp</item>
+        <item name="item_strokeColor">#939393</item>
+        <item name="item_selectedStrokeColor">#939393</item>
+        <item name="item_strokeWidth">1px</item>
+        <item name="item_horizontalSpacing">5dp</item>
+        <!--这里设置固定大小,padding为0-->
+        <item name="item_horizontalPadding">5dp</item>
+        <item name="item_verticalPadding">2dp</item>
+        <!--单位dp-->
+        <item name="item_width">wrap_content</item>
+        <item name="item_height">wrap_content</item>
+        <!--限制tag显示长度,规则查看Textview-->
+        <item name="item_maxEms">5</item>
+        <!--多选-->
+        <item name="item_multiChooseable">true</item>
+    </style>
+
+
+    <style name="home_item_l">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">53dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="home_l_bg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">53dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:background">@drawable/white_corner_10_bg</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="home_l_common_bg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:background">@drawable/white_corner_10_bg</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="home_item_rl_bg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+
+    <style name="home_item_rl_image_bg">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="home_item_rl_text_bg">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:textColor">@color/C_222222</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="home_item_rl_arrow_bg">
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/ic_arrow_right</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+    <style name="home_item_profession_rl_bg">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/profession_bg</item>
+    </style>
+
+    <style name="home_item_profession_rl_white_bg">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/profession_white_bg</item>
+    </style>
+
+    <style name="home_item_profession_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/common_text_alert</item>
+    </style>
+
+    <style name="home_item_profession_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/common_text_alert</item>
+    </style>
+
+
+    <style name="ProvinceTagFlowLayoutStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="item_textColor">#666666</item>
+        <item name="item_textSize">12sp</item>
+        <item name="item_backgroundColor">#ffffff</item>
+        <item name="item_selectedTextColor">#ffffff</item>
+        <item name="item_selectedBackgroundColor">#7289ff</item>
+        <item name="item_radius">0dp</item>
+        <item name="item_strokeColor">#939393</item>
+        <item name="item_selectedStrokeColor">#939393</item>
+        <item name="item_strokeWidth">1px</item>
+        <item name="item_horizontalSpacing">5dp</item>
+        <item name="item_horizontalPadding">5dp</item>
+        <item name="item_verticalPadding">2dp</item>
+        <!--单位dp-->
+        <item name="item_width">wrap_content</item>
+        <item name="item_height">wrap_content</item>
+        <item name="item_maxEms">5</item>
+        <item name="item_multiChooseable">false</item>
+    </style>
+
+
+    <style name="user_input_bg_l">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/shape_username</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="user_input_left_img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">30dp</item>
+    </style>
+
+    <style name="user_input_title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_weight">0.4</item>
+        <item name="android:textColor">@color/hint_color</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">30dp</item>
+    </style>
+
+    <style name="user_input_right_et">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@drawable/edit_cursor_bg</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHint">@color/user_input_title</item>
+        <item name="android:textColor">@color/common_blue</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="base_status_bar">#0A84FF</color>
+    <color name="base_white">#ffffff</color>
+    <color name="base_color_white_statusbar">#dad9d9</color>
+    <color name="common_blue">#3496FA</color>
+</resources>

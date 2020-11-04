@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/white_corner_10_bg"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp">
+
+        <com.sunfusheng.GlideImageView
+            android:id="@+id/school_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_img_school_default">
+
+        </com.sunfusheng.GlideImageView>
+
+        <TextView
+            android:id="@+id/school_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/school_img"
+            android:textColor="#222222"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="清华大学">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/school_role_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/school_name_tv"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/school_img"
+            android:textColor="#8A8A8A"
+            android:textSize="12sp"
+            android:visibility="visible"
+            tools:text="综合类">
+
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/school_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/home_school_type_bg"
+            android:padding="5dp"
+            android:textColor="@color/common_text_alert"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:text="985，211">
+
+        </TextView>
+
+        <com.ihidea.multilinechooselib.MultiLineChooseLayout
+            android:id="@+id/school_tag_flowLayout"
+            style="@style/SchoolTagFlowLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/school_name_tv"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/school_img"></com.ihidea.multilinechooselib.MultiLineChooseLayout>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="20dp"
+        android:background="#f6f6f6">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_school_location"></ImageView>
+
+        <TextView
+            android:id="@+id/school_location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/common_text_alert"
+            android:textSize="12sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

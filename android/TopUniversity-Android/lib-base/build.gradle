@@ -1,0 +1,157 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled true
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+
+    }
+
+    //统一资源前缀,规范资源引用
+    resourcePrefix "base_"
+
+    dataBinding {
+        enabled true
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+        jumboMode = true
+        preDexLibraries = false
+        additionalParameters = [
+                '--multi-dex',//多分包
+                '--set-max-idx-number=60000'//每个包内方法数上限
+        ]
+    }
+}
+
+dependencies {
+
+    api(rootProject.ext.androidx["androidx-legacy-support-v4"]) {
+        exclude module: 'annotation'
+        exclude module: 'coordinatorlayout'
+    }
+    //androidx
+    api(rootProject.ext.androidx["androidx-appcompat"]) {
+        exclude module: 'android-annotations'
+    }
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    api rootProject.ext.androidx["android-material"]
+    api(rootProject.ext.androidx["androidx-recyclerview"]) {
+        exclude module: 'android-annotations'
+    }
+    api rootProject.ext.androidx["android-annotations"]
+    api rootProject.ext.dependencies["support-annotations"]
+
+    //view
+    api(rootProject.ext.dependencies["butterknife"]) {
+        exclude module: 'annotation'
+        exclude module: 'core'
+    }
+
+    //rx
+    api rootProject.ext.dependencies["rxjava2"]
+    api(rootProject.ext.dependencies["rxandroid2"]) {
+        exclude module: 'rxjava'
+    }
+    api(rootProject.ext.dependencies["rxcache2"]) {
+        exclude module: 'rxjava'
+        exclude module: 'dagger'
+        exclude module: 'api'
+    }
+    implementation(rootProject.ext.dependencies["rxcache-jolyglot-gson"]) {
+        exclude module: 'gson'
+    }
+    api(rootProject.ext.dependencies["rxlifecycle2"]) {
+        exclude module: 'rxjava'
+        exclude module: 'jsr305'
+    }
+    api(rootProject.ext.dependencies["rxlifecycle2-android"]) {
+        exclude module: 'annotation'
+        exclude module: 'rxjava'
+        exclude module: 'rxandroid'
+        exclude module: 'rxlifecycle'
+    }
+    api(rootProject.ext.dependencies["rxpermissions2"]) {
+        exclude module: 'rxjava'
+        exclude module: 'annotation'
+    }
+    api rootProject.ext.dependencies['rxerrorhandler2']
+
+    //network
+    api(rootProject.ext.dependencies["retrofit2"]) {
+        exclude module: 'okhttp'
+        exclude module: 'okio'
+    }
+    implementation(rootProject.ext.dependencies["retrofit-converter-gson"]) {
+        exclude module: 'gson'
+        exclude module: 'okhttp'
+        exclude module: 'okio'
+        exclude module: 'retrofit'
+    }
+    implementation(rootProject.ext.dependencies["retrofit-adapter-rxjava2"]) {
+        exclude module: 'rxjava'
+        exclude module: 'okhttp'
+        exclude module: 'retrofit'
+        exclude module: 'okio'
+    }
+    api rootProject.ext.dependencies["okhttp3"]
+
+    //tools
+    compileOnly rootProject.ext.dependencies["javax.annotation"]
+    api rootProject.ext.dependencies["dagger2"]
+    api rootProject.ext.dependencies["multidex"]
+    annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
+    api rootProject.ext.dependencies["androideventbus"]
+    api rootProject.ext.dependencies["eventbus"]
+    api rootProject.ext.dependencies["gson"]
+    api rootProject.ext.dependencies["Logger"]
+
+    //test
+    api rootProject.ext.dependencies["timber"]
+    api rootProject.ext.dependencies["GlideImageView"]
+
+    api rootProject.ext.dependencies["retrofit-url-manager"]
+    api rootProject.ext.dependencies["immersionbar"]
+
+    implementation rootProject.ext.androidx["androidx-appcompat"]
+
+    //view
+    compileOnly rootProject.ext.dependencies["autolayout"]
+    api rootProject.ext.dependencies["constraintlayout"]
+    //扫码
+    api rootProject.ext.dependencies["zxing"]
+    api rootProject.ext.dependencies["qrcode-zxing"]
+    api rootProject.ext.dependencies["zbar"]
+    //webView
+    api rootProject.ext.dependencies["dsbridge"]
+    api rootProject.ext.dependencies["webprogress"]
+    //淘宝id
+//    api rootProject.ext.dependencies["utdid"]
+    api rootProject.ext.dependencies["multilinechooselib"]
+    api rootProject.ext.dependencies["PictureSelector"]
+    api rootProject.ext.dependencies["AVLoadingIndicatorView"]
+    api rootProject.ext.androidx["viewpager2"]
+    api rootProject.ext.dependencies["richtext"]
+    api rootProject.ext.dependencies["appupdate"]
+
+}

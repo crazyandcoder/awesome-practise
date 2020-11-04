@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/home_l_common_bg"
+    android:layout_marginTop="50dp">
+
+    <LinearLayout
+        android:id="@+id/fav_l"
+        android:visibility="gone"
+        style="@style/home_item_l">
+
+        <RelativeLayout style="@style/home_item_rl_bg">
+
+            <ImageView
+                style="@style/home_item_rl_image_bg"
+                android:src="@drawable/ic_favorite_on"></ImageView>
+
+            <TextView
+                style="@style/home_item_rl_text_bg"
+                android:text="我的收藏"></TextView>
+
+            <ImageView style="@style/home_item_rl_arrow_bg"></ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/include_line_horizontal"></include>
+
+    <LinearLayout
+        android:id="@+id/about_l"
+        style="@style/home_item_l">
+
+        <RelativeLayout style="@style/home_item_rl_bg">
+
+            <ImageView
+                style="@style/home_item_rl_image_bg"
+                android:src="@drawable/ic_about"></ImageView>
+
+            <TextView
+                style="@style/home_item_rl_text_bg"
+                android:text="关于我们"></TextView>
+
+            <ImageView style="@style/home_item_rl_arrow_bg"></ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/include_line_horizontal"></include>
+
+    <LinearLayout
+        android:id="@+id/feedback_l"
+        style="@style/home_item_l">
+
+        <RelativeLayout style="@style/home_item_rl_bg">
+
+            <ImageView
+                style="@style/home_item_rl_image_bg"
+                android:src="@drawable/ic_feedback"></ImageView>
+
+            <TextView
+                style="@style/home_item_rl_text_bg"
+                android:text="意见反馈"></TextView>
+
+            <ImageView style="@style/home_item_rl_arrow_bg"></ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/include_line_horizontal"></include>
+
+    <LinearLayout
+        android:id="@+id/update_l"
+        style="@style/home_item_l">
+
+        <RelativeLayout style="@style/home_item_rl_bg">
+
+            <ImageView
+                style="@style/home_item_rl_image_bg"
+                android:src="@drawable/ic_update"></ImageView>
+
+            <TextView
+                style="@style/home_item_rl_text_bg"
+                android:text="检查更新"></TextView>
+
+            <ImageView style="@style/home_item_rl_arrow_bg"></ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/include_line_horizontal"></include>
+
+    <LinearLayout
+        android:id="@+id/setting_l"
+        style="@style/home_item_l">
+
+        <RelativeLayout style="@style/home_item_rl_bg">
+
+            <ImageView
+                style="@style/home_item_rl_image_bg"
+                android:src="@drawable/ic_setting"></ImageView>
+
+            <TextView
+                style="@style/home_item_rl_text_bg"
+                android:text="设置"></TextView>
+
+            <ImageView style="@style/home_item_rl_arrow_bg"></ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

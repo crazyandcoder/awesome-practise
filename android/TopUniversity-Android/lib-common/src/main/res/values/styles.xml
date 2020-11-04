@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="commonDialog" parent="Theme.AppCompat.DayNight.Dialog" tools:ignore="ResourceName">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/animation_Dialog</item>
+    </style>
+
+
+    <style name="updateDialog" parent="android:style/Theme.Dialog" tools:ignore="ResourceName">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/animation_Dialog</item>
+    </style>
+
+    <style name="animation_Dialog" tools:ignore="ResourceName">
+        <item name="android:windowEnterAnimation">@anim/common_pop_enter</item>
+        <item name="android:windowExitAnimation">@anim/common_pop_exit</item>
+    </style>
+
+    <style name="currency_dialog" parent="android:style/Theme.Dialog" tools:ignore="ResourceName">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

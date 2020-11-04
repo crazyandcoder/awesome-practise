@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profession_banner_item_l"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_corner_10_bg"
+    android:orientation="vertical"
+    android:paddingTop="2dp"
+    android:paddingBottom="5dp">
+
+
+    <TextView
+        android:id="@+id/recommend_profession_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:textColor="@color/common_text_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        tools:text="资源与环境经济学">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout style="@style/home_item_profession_rl_bg">
+
+            <TextView
+                style="@style/home_item_profession_title"
+                android:text="专业名称：">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/item_recommend_profession_name_tv"
+                style="@style/home_item_profession_content"
+                android:textColor="@color/common_text_content"
+                android:textStyle="bold"
+                tools:text="资源与环境经济学">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            style="@style/home_item_profession_rl_bg"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/home_item_profession_title"
+                android:text="学科：">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/item_recommend_profession_level2_tv"
+                style="@style/home_item_profession_content"
+                tools:text="哲学类">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout style="@style/home_item_profession_rl_bg">
+
+            <TextView
+                style="@style/home_item_profession_title"
+                android:text="学历层次：">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/item_recommend_profession_level1_tv"
+                style="@style/home_item_profession_content"
+                tools:text="本科">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout style="@style/home_item_profession_rl_bg">
+
+            <TextView
+                style="@style/home_item_profession_title"
+                android:text="门类：">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/item_recommend_profession_level3_tv"
+                style="@style/home_item_profession_content"
+                tools:text="哲学类">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout style="@style/home_item_profession_rl_bg">
+
+            <TextView
+                style="@style/home_item_profession_title"
+                android:text="授予学位：">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/item_recommend_profession_degree_tv"
+                style="@style/home_item_profession_content"
+                tools:text="经济学学士">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/home_item_profession_rl_bg">
+
+            <TextView
+                style="@style/home_item_profession_title"
+                android:text="学制：">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/item_recommend_profession_limit_tv"
+                style="@style/home_item_profession_content"
+                tools:text="四年">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="总计：1000000"></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="月度：3333"></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="每周：100"></TextView>
+    </LinearLayout>
+
+</LinearLayout>

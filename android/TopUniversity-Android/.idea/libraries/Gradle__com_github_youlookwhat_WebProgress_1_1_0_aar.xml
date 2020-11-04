@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.youlookwhat:WebProgress:1.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a47858fb6ca78b46d1d2edf50b438990/jetified-WebProgress-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a47858fb6ca78b46d1d2edf50b438990/jetified-WebProgress-1.1.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.youlookwhat/WebProgress/1.1.0/2c9558f6d8ed620dafc81c5ae5ad88d57eda474f/WebProgress-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

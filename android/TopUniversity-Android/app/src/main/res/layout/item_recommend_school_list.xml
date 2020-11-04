@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:padding="10dp"
+    android:background="@drawable/white_corner_10_bg"
+    android:gravity="center"
+    android:paddingBottom="10dp">
+
+
+    <com.sunfusheng.GlideImageView
+        android:id="@+id/recommend_school_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_img_school_default">
+
+    </com.sunfusheng.GlideImageView>
+
+    <TextView
+        android:id="@+id/recommend_school_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recommend_school_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLength="6"
+        android:singleLine="true"
+        android:textColor="@color/common_text_alert"
+        android:textSize="10sp"
+        tools:text="清华大学噶科技馆卡上的">
+
+    </TextView>
+
+
+</RelativeLayout>

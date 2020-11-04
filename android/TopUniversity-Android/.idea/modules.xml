@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TopUniversity.iml" filepath="$PROJECT_DIR$/.idea/modules/TopUniversity.iml" group="TopUniversity" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="TopUniversity/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib-base/lib-base.iml" filepath="$PROJECT_DIR$/.idea/modules/lib-base/lib-base.iml" group="TopUniversity/lib-base" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib-common/lib-common.iml" filepath="$PROJECT_DIR$/.idea/modules/lib-common/lib-common.iml" group="TopUniversity/lib-common" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal">
+
+    <com.crazyandcoder.android.lib.common.widget.banner.Banner
+        xmlns:banner="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="40dp"
+        banner:banner_indicator_normal_color="@android:color/white"
+        banner:banner_indicator_selected_color="@color/colorPrimary"
+        banner:banner_radius="5dp" />
+
+
+</FrameLayout>

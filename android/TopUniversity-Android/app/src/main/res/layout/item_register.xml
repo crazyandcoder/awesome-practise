@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/user_input_bg_l">
+
+        <ImageView
+            style="@style/user_input_left_img"
+            android:src="@drawable/ic_username" />
+
+        <TextView
+            style="@style/user_input_title"
+            android:gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.4"
+            android:text="账号" />
+
+        <EditText
+            android:id="@+id/username_et"
+            android:layout_marginLeft="30dp"
+            style="@style/user_input_right_et"
+            android:hint="输入用户名" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/user_input_bg_l"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            style="@style/user_input_left_img"
+            android:src="@drawable/ic_password" />
+
+        <TextView
+            android:gravity="right"
+            android:layout_weight="0.4"
+            android:layout_marginLeft="10dp"
+            style="@style/user_input_title"
+            android:text="密码" />
+
+
+        <EditText
+            android:id="@+id/password_et"
+            style="@style/user_input_right_et"
+            android:layout_marginLeft="30dp"
+            android:hint="输入密码"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/user_input_bg_l"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            style="@style/user_input_left_img"
+            android:src="@drawable/ic_password" />
+
+        <TextView
+            android:gravity="right"
+            android:layout_weight="0.4"
+            android:layout_marginLeft="10dp"
+            style="@style/user_input_title"
+            android:text="确认密码" />
+
+        <EditText
+            android:id="@+id/confirm_password_et"
+            style="@style/user_input_right_et"
+            android:hint="再次输入密码"
+            android:layout_marginLeft="30dp"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+
+</LinearLayout>

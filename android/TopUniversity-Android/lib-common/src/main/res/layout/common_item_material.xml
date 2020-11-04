@@ -1,0 +1,39 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/common_material_bottom_navigation_margin"
+        android:layout_marginTop="@dimen/common_material_bottom_navigation_margin" />
+
+    <com.crazyandcoder.android.lib.common.widget.bottomtab.layout.BaselineLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:clipToPadding="false"
+        android:paddingBottom="10dp"
+        >
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="@dimen/common_material_bottom_navigation_text_size"
+            tools:text="123" />
+    </com.crazyandcoder.android.lib.common.widget.bottomtab.layout.BaselineLayout>
+
+    <com.crazyandcoder.android.lib.common.widget.bottomtab.view.RoundMessageView
+        android:id="@+id/messages"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:translationX="14dp"
+        android:visibility="gone" />
+
+</merge>
+
+

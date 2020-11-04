@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/C_F6F6F6"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="132dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_search_empty">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="搜索不到匹配的内容"
+        android:textColor="@color/C_8A8A8A"
+        android:textSize="14sp">
+
+    </TextView>
+
+</LinearLayout>

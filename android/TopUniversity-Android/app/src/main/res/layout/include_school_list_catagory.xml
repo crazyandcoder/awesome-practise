@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@color/common_bg_default"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/catagory_school_rl"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_catagory_1">
+
+        <ImageView
+            android:id="@+id/img_catagory_school"
+            style="@style/home_linearlayout_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_school"></ImageView>
+
+
+        <TextView
+            android:id="@+id/tv_catagory_school"
+            style="@style/home_linearlayout_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/img_catagory_school"
+            android:text="大学排名"
+            android:textColor="@color/red_400"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_catagory_school"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_catagory_school"
+            android:text="找大学"
+            android:textColor="@color/common_text_alert"
+            android:textSize="12sp"
+            android:visibility="gone">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/catagory_special_rl"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_catagory_2">
+
+        <ImageView
+            android:id="@+id/img_catagory_special"
+            style="@style/home_linearlayout_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_school_subject"></ImageView>
+
+
+        <TextView
+            android:id="@+id/tv_catagory_special"
+            style="@style/home_linearlayout_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_catagory_special"
+            android:text="热门专业"
+            android:textSize="16sp"
+            android:textColor="@color/green_500"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_catagory_special"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_catagory_special"
+            android:text="查专业"
+            android:textColor="@color/green_500"
+            android:textSize="12sp"
+            android:visibility="gone">
+
+        </TextView>
+    </RelativeLayout>
+
+
+</LinearLayout>

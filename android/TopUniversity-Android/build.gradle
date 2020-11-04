@@ -1,0 +1,38 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: "dependence.gradle"
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.0.0"
+        classpath 'com.jakewharton:butterknife-gradle-plugin:9.0.0'
+        classpath 'org.hidetake:gradle-ssh-plugin:2.10.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+configurations.all {
+    resolutionStrategy {
+        eachDependency { details ->
+            // Force all of the primary libraries to use the same version.
+            if (details.requested.name == 'appcompat'
+                    && details.requested.name == 'annotation'
+                    && details.requested.name == 'recyclerview') {
+                details.useVersion rootProject.ext.version["androidXSdkVersion"]
+            }
+        }
+    }
+}

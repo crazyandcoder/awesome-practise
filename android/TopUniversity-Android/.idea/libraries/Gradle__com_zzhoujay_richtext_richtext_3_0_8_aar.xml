@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.zzhoujay.richtext:richtext:3.0.8@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1349a6cf08c73b190faf842485744366/jetified-richtext-3.0.8/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1349a6cf08c73b190faf842485744366/jetified-richtext-3.0.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1349a6cf08c73b190faf842485744366/jetified-richtext-3.0.8/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zzhoujay.richtext/richtext/3.0.8/52a113935caee7147e29b47e736b2895ee1bfa9c/richtext-3.0.8-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zzhoujay.richtext/richtext/3.0.8/44cceed1cc0101513a91cf20ac110f2ee2764ba6/richtext-3.0.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

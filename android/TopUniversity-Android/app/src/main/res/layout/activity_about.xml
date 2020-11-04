@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:background="@color/common_bg_default"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+
+    <RelativeLayout
+        android:id="@+id/home_my_head_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/tree_hole_user_avatar_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/ic_launcher" />
+
+
+        <TextView
+            android:id="@+id/tree_hole_user_nick_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tree_hole_user_avatar_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="大学，扬帆起航"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/common_blue"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/home_l_common_bg"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:id="@+id/setting_user_about_l"
+            style="@style/home_item_l">
+
+            <RelativeLayout style="@style/home_item_rl_bg">
+
+                <ImageView
+                    style="@style/home_item_rl_image_bg"
+                    android:src="@drawable/ic_qq"></ImageView>
+
+                <TextView
+                    style="@style/home_item_rl_text_bg"
+                    android:text="QQ交流群：1163880751"></TextView>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include layout="@layout/include_line_horizontal"></include>
+
+        <LinearLayout
+            android:id="@+id/setting_user_protocol_l"
+            style="@style/home_item_l">
+
+            <RelativeLayout style="@style/home_item_rl_bg">
+
+                <ImageView
+                    style="@style/home_item_rl_image_bg"
+                    android:src="@drawable/ic_email"></ImageView>
+
+                <TextView
+                    style="@style/home_item_rl_text_bg"
+                    android:text="邮箱： crazyandcoder@gmail.com"></TextView>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

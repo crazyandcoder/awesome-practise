@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/white_corner_10_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/white_corner_10_bg"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/more_hot_profession_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_hot_special"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:text="热门专业"
+                android:textColor="@color/common_text_content"
+                android:textSize="16sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:text="更多"
+                android:textColor="@color/common_text_alert"
+                android:textSize="12sp">
+
+            </TextView>
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_arrow_right"></ImageView>
+
+
+        </RelativeLayout>
+
+        <com.crazyandcoder.android.lib.common.widget.banner.Banner
+            android:id="@+id/profession_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        </com.crazyandcoder.android.lib.common.widget.banner.Banner>
+
+
+    </LinearLayout>
+
+</LinearLayout>

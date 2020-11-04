@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/home_l_bg">
+
+    <RelativeLayout style="@style/home_item_rl_bg">
+
+        <ImageView
+            style="@style/home_item_rl_image_bg"
+            android:src="@drawable/ic_update"></ImageView>
+
+        <TextView
+            style="@style/home_item_rl_text_bg"
+            android:text="检查更新"></TextView>
+
+        <ImageView style="@style/home_item_rl_arrow_bg"></ImageView>
+    </RelativeLayout>
+
+</LinearLayout>

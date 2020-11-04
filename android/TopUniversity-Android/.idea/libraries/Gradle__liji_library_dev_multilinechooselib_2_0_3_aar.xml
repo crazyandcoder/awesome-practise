@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: liji.library.dev:multilinechooselib:2.0.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7616c2185e29a8185282dead91ab11ad/jetified-multilinechooselib-2.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7616c2185e29a8185282dead91ab11ad/jetified-multilinechooselib-2.0.3/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

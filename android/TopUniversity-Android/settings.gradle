@@ -1,0 +1,4 @@
+include ':lib-common'
+include ':lib-base'
+include ':app'
+rootProject.name = "TopUniversity"

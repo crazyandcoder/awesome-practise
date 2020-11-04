@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_default"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <Button
+        android:id="@+id/login_out_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_user_login_btn"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

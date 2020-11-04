@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.crazyandcoder.top.university">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.crazyandcoder.android.lib.base.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".mvp.ui.activity.setting.AboutActivity" />
+        <activity android:name=".mvp.ui.activity.setting.AdviceActivity" />
+        <activity android:name=".mvp.ui.activity.setting.SettingActivity" />
+        <activity android:name=".mvp.ui.activity.user.RegisterActivity" />
+        <activity android:name=".mvp.ui.activity.profession.ProfessionHotListActivity" />
+        <activity android:name=".mvp.ui.activity.profession.ProfessionListActivity" />
+        <activity android:name=".mvp.ui.activity.profession.ProfessionJobActivity" />
+        <activity android:name=".mvp.ui.activity.school.SchoolDetailMoreInfoActivity" />
+        <activity android:name=".mvp.ui.activity.profession.ProfessionDetailInfoActivity" />
+        <activity android:name=".mvp.ui.activity.school.SchoolListActivity" />
+        <activity android:name=".mvp.ui.activity.school.SchoolDetailActivity" />
+        <activity android:name=".mvp.ui.activity.main.MainActivity" />
+        <activity android:name=".mvp.ui.activity.user.LoginActivity" />
+        <activity android:name=".mvp.ui.activity.common.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.crazyandcoder.top.university.app.AppConfiguration"
+            android:value="ConfigModule" />
+    </application>
+
+</manifest>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.orhanobut:logger:2.2.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/89e57296a7bb638ad297428f30480139/jetified-logger-2.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/89e57296a7bb638ad297428f30480139/jetified-logger-2.2.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.orhanobut/logger/2.2.0/98e69754ab23f7179137d8d2a0e3eea79200d746/logger-2.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.orhanobut/logger/2.2.0/ab592e9d70f1f3ef6f9a62c2066b3d3ac08244e8/logger-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

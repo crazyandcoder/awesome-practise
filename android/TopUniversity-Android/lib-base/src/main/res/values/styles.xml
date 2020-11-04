@@ -1,0 +1,44 @@
+<resources>
+
+    <style name="BaseAxToolbarStyle">
+        <!--导航栏ToolBar样式-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/base_ax_Toolbar_height</item>
+        <item name="android:background">#ffffff</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="navigationIcon">@drawable/ic_back</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/BaseToolbarStyle</item>
+        <item name="titleTextColor">#ffffff</item>
+    </style>
+
+    <!--titleBar样式-->
+    <style name="BaseToolbarStyle" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="titleTextAppearance">@style/BaseToolBar.Title</item>
+        <item name="subtitleTextAppearance">@style/BaseToolBar.SubTitle</item>
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+    <!--titlebar 标题-->
+    <style name="BaseToolBar.Title" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!--titlebar 副标题-->
+    <style name="BaseToolBar.SubTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">9.0sp</item>
+        <item name="android:textColor">#99ffffff</item>
+    </style>
+
+
+    <style name="base_currency_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.qianwen:update-app:3.5.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/10b94ea186dfc718b2a91f23969c126f/jetified-update-app-3.5.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/10b94ea186dfc718b2a91f23969c126f/jetified-update-app-3.5.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.qianwen/update-app/3.5.2/7d2811671955a22f418038da03a60b04d2d4dad9/update-app-3.5.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.qianwen/update-app/3.5.2/177ef36b46ef2185a5b03ef9dbc9b7580cba256b/update-app-3.5.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_center_toast_bg"
+        android:gravity="center_horizontal"
+        android:paddingLeft="24dp"
+        android:paddingTop="21dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="21dp"
+        tools:text="验证码错误，请重新输入"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+</LinearLayout>
