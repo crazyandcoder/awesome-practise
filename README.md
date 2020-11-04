@@ -1,3 +1,6 @@
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20201104073558275.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xqMTg4MjY2,size_16,color_FFFFFF,t_70#pic_center)
+
+
 # awesome-practise
 从0到1实现全栈开发的步骤，包括数据的爬取，服务端接口的开发，UI设计，以及移动端的开发，从0到1实现一整套的流程。
 
