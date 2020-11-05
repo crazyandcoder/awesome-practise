@@ -1,0 +1,16 @@
+parsel-1.6.0.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+parsel-1.6.0.dist-info/LICENSE,sha256=EjilxoEoVqJpatBTDtrSSV7AMEicPmPB-JD5VBZyrZc,1521
+parsel-1.6.0.dist-info/METADATA,sha256=KeyPUNFIEXJ61G4gHyjtjjWsm7DMsqVNVhQMet64me0,8422
+parsel-1.6.0.dist-info/RECORD,,
+parsel-1.6.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+parsel-1.6.0.dist-info/top_level.txt,sha256=djxZw3B9hpuDSWmC-9A8vEn2YaYMBNgv8v4sBhivK7A,7
+parsel/__init__.py,sha256=sYDZqykczJuPI_Q1QRel3q7zcugZ7SBGLZ2sED2s-mw,341
+parsel/__pycache__/__init__.cpython-38.pyc,,
+parsel/__pycache__/csstranslator.cpython-38.pyc,,
+parsel/__pycache__/selector.cpython-38.pyc,,
+parsel/__pycache__/utils.cpython-38.pyc,,
+parsel/__pycache__/xpathfuncs.cpython-38.pyc,,
+parsel/csstranslator.py,sha256=rE2jHOvTWimAj6nLilujY0GdEx5VrQYnzVp5mZEQFZI,4077
+parsel/selector.py,sha256=IdFlfqeprgDFeEEX4Ge4onvITwoWrS6I87F7I9VWBzg,14604
+parsel/utils.py,sha256=L0UxgQcmZj-L4Z1ard4q5ez9BEAa17eKu0wEQfkbP8E,2765
+parsel/xpathfuncs.py,sha256=s3j_ER11RYe9Eco7L6Yg52JsBST5de04oSs1lWwDd6M,1780

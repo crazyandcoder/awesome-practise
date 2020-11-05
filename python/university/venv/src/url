@@ -1,0 +1,27 @@
+https://api.eol.cn/gkcx/api/?access_token=&admissions=&central=&department=&dual_class=&f211=&f985=&is_dual_class=&keyword=&page=1&province_id=&request_type=1&school_type=&signsafe=&size=20&sort=view_total&type=&uri=apigkcx/api/school/hotlists //默认
+https://api.eol.cn/gkcx/api/?access_token=&admissions=&central=&department=&dual_class=&f211=&f985=1&is_dual_class=&keyword=&page=1&province_id=&request_type=1&school_type=&signsafe=&size=20&sort=view_total&type=&uri=apigkcx/api/school/hotlists //高校层次，985，211。。。
+https://api.eol.cn/gkcx/api/?access_token=&admissions=&central=&department=&dual_class=&f211=&f985=&is_dual_class=&keyword=&page=1&province_id=&request_type=1&school_type=6000&signsafe=&size=20&sort=view_total&type=&uri=apigkcx/api/school/hotlists //办学类型，普通本科，独立学院，专科。。。
+https://api.eol.cn/gkcx/api/?access_token=&admissions=&central=&department=&dual_class=&f211=&f985=&is_dual_class=&keyword=&page=1&province_id=&request_type=1&school_type=&signsafe=&size=20&sort=view_total&type=5002&uri=apigkcx/api/school/hotlists //院校类型，综合，理工，农林，医药。。。
+https://api.eol.cn/gkcx/api/?access_token=&admissions=&central=&department=&dual_class=&f211=&f985=&is_dual_class=&keyword=&page=1&province_id=32&request_type=1&school_type=&signsafe=&size=20&sort=view_total&type=&uri=apigkcx/api/school/hotlists //地区
+
+
+insert into top_university_school_list(address,belong,city_id,city_name,code_enroll,colleges_level,department,dual_class,dual_class_name,f211,f985,level,level_name,is_top,name,nature_name,nature,province_id,province_name,publish_id,rank,rank_type,school_id,school_type,type,type_name)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+
+https://api.eol.cn/gkcx/api/?access_token=&keyword=&level1=&level2=3&page=1&signsafe=&size=20&uri=apidata/api/gk/special/lists
+
+https://api.eol.cn/gkcx/api/?access_token=&keyword=&level1=&level2=&page=1&signsafe=&size=20&uri=apidata/api/gk/special/lists
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
