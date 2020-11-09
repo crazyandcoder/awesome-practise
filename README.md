@@ -8,14 +8,14 @@
 前一阶段自学了一些服务端的开发知识，简单的用SpringBoot搭建了一套服务端开发框架，然后通过python爬取了网站上面的数据，然后存入到了mysql数据库中，移动端通过接口实现了简单的调用。这一系列的流程下来实现了一把从0到1的全栈开发步骤，本篇文章简单叙述一下实现过程。后面将会详细记录每个部分的实现细节。欢迎持续关注！
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20201103210333759.gif#pic_center)
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20201103210713378.gif#pic_center)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20201103210333759.gif)![在这里插入图片描述](https://img-blog.csdnimg.cn/20201103210713378.gif)
 
 ## 技术栈
-服务端：SpringBoot + MyBatis++ + MySql等
-Android：MVP + Rxjava + Retrofit + Dagger2 + EventBus等开源库
-数据采集：python + Mysql等
+**服务端**：SpringBoot + MyBatis++ + MySql等
+
+**Android**：MVP + Rxjava + Retrofit + Dagger2 + EventBus等开源库
+
+**数据采集**：python + Mysql等
 
 
 ## 正文
