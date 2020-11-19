@@ -30,6 +30,10 @@
 
 2.[**《全栈项目从0到1（二）部署运行》**](https://github.com/crazyandcoder/awesome-practise/wiki/%E5%85%A8%E6%A0%88%E9%A1%B9%E7%9B%AE%EF%BC%88%E4%BA%8C%EF%BC%89%E8%BF%90%E8%A1%8C%E9%83%A8%E7%BD%B2)
 
+
+3.[**《全栈项目从0到1（三）python爬虫实现数据采集》**](https://github.com/crazyandcoder/awesome-practise/wiki/%E5%85%A8%E6%A0%88%E9%A1%B9%E7%9B%AE%EF%BC%88%E4%B8%89%EF%BC%89%E7%88%AC%E8%99%AB%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86)
+
+
 ***持续更新中，请耐心等待...***
 
 
