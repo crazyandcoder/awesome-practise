@@ -2,31 +2,159 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.crazyandcoder.university.mapper.TopUniversityInfoMapper">
 
-    <resultMap id="topUniversityInfoMap" type="com.crazyandcoder.university.entity.TopUniversityInfo">
+    <resultMap id="topUniversityListInfo" type="com.crazyandcoder.university.entity.TopUniversityListInfo">
         <id column="id" property="id"/>
-        <result column="top_university_name" property="topUniversityName"/>
-        <result column="top_university_level" property="topUniversityLevel"/>
-        <result column="top_university_type" property="topUniversityType"/>
-        <result column="top_university_address" property="topUniversityAddress"/>
-        <result column="top_university_addmission_tel" property="topUniversityAddmissionTel"/>
-        <result column="top_university_addmission_website" property="topUniversityAddmissionWebsite"/>
+        <result column="logo" property="logo"/>
+        <result column="address" property="address"/>
+        <result column="belong" property="belong"/>
+        <result column="city_id" property="cityId"/>
+        <result column="city_name" property="cityName"/>
+        <result column="code_enroll" property="codeEnroll"/>
+        <result column="colleges_level" property="collegesLevel"/>
+        <result column="department" property="department"/>
+        <result column="dual_class" property="dualClass"/>
+        <result column="dual_class_name" property="dualClassName"/>
+        <result column="f211" property="f211"/>
+        <result column="f985" property="f985"/>
+        <result column="level" property="level"/>
+        <result column="level_name" property="levelName"/>
+        <result column="is_top" property="isTop"/>
+        <result column="name" property="name"/>
+        <result column="nature_name" property="natureName"/>
+        <result column="nature" property="nature"/>
+        <result column="province_id" property="provinceId"/>
+        <result column="province_name" property="provinceName"/>
+        <result column="publish_id" property="publishId"/>
+        <result column="school_id" property="schoolId"/>
+        <result column="school_type" property="schoolType"/>
+        <result column="type" property="type"/>
+        <result column="type_name" property="typeName"/>
 
     </resultMap>
 
+    <resultMap id="topUniversityListMoreInfo" type="com.crazyandcoder.university.entity.TopUniversityDetailMoreInfo">
+        <id column="id" property="id"/>
+        <result column="school_id" property="schoolId"/>
+        <result column="about_xuexiaogaikuang" property="aboutXueXiaoGaiKuang"/>
+        <result column="about_yuanxishezhi" property="aboutYuanXiSheZhi"/>
+        <result column="about_shizililiang" property="aboutShiZiLiLiang"/>
+        <result column="about_tijianbiaozhun" property="aboutTiJianBiaoZhun"/>
+        <result column="about_shoufeibiaozhun" property="aboutShouFeiBiaoZhun"/>
+        <result column="about_jiuyeqingkuang" property="aboutJiuYeQingKuang"/>
+        <result column="about_luquguize" property="aboutLuQuGuiZe"/>
+        <result column="about_xuexiaolingdao" property="aboutXueXiaoLingDao"/>
+        <result column="about_zhongdianxueke" property="aboutZhongDianXueKe"/>
+        <result column="about_zhaoshengzhengce" property="aboutZhaoShengZhengCe"/>
+        <result column="about_yiliuxueke" property="aboutYiLiuXueKe"/>
+    </resultMap>
 
-    <select id="selectTopUniversitiesPage" resultMap="topUniversityInfoMap">
-        select id,top_university_name
-        ,top_university_level
-        ,top_university_type
-        ,top_university_address
-        ,top_university_addmission_tel
-        ,top_university_addmission_website
+    <resultMap id="topUniversityDetailInfo" type="com.crazyandcoder.university.entity.TopUniversityDetailInfo">
+        <id column="id" property="id"/>
+        <result column="address" property="schoolId"/>
+        <result column="school_no" property="schoolNo"/>
+        <result column="school_name" property="schoolName"/>
+        <result column="school_logo" property="schoolLogo"/>
+        <result column="school_address" property="schoolAddress"/>
+        <result column="school_belong" property="schoolBelong"/>
+        <result column="school_create_time" property="schoolCreateTime"/>
+        <result column="school_area" property="schoolArea"/>
+        <result column="school_library_num" property="schoolLibraryNum"/>
+        <result column="school_academician_num" property="schoolAcademicianNum"/>
+        <result column="school_doctor_num" property="schoolDoctorNum"/>
+        <result column="school_master_num" property="schoolMasterNum"/>
+        <result column="school_lab_num" property="schoolLabNum"/>
+        <result column="school_subject_num" property="schoolSubjectNum"/>
+        <result column="school_phone" property="schoolPhone"/>
+        <result column="school_postcode" property="schoolPostcode"/>
+        <result column="school_email" property="schoolEmail"/>
+        <result column="school_content" property="schoolContent"/>
+        <result column="school_province_name" property="schoolProvinceName"/>
+        <result column="school_province_id" property="schoolProvinceId"/>
+        <result column="school_city_name" property="schoolCityName"/>
+        <result column="school_city_id" property="schoolCityId"/>
+        <result column="school_town_name" property="schoolTownName"/>
+        <result column="school_level_name" property="schoolLevelName"/>
+        <result column="school_level_id" property="schoolLevelId"/>
+        <result column="school_type_name" property="schoolTypeName"/>
+        <result column="school_type" property="schoolType"/>
+        <result column="school_nature_name" property="schoolNatureName"/>
+        <result column="school_zsb_site" property="schoolZsbSite"/>
+        <result column="school_site" property="schoolSite"/>
+        <result column="school_211" property="school211"/>
+        <result column="school_985" property="school985"/>
+        <result column="school_short" property="schoolShort"/>
+        <result column="images" property="schoolImages"/>
 
-        from top_university_info
+    </resultMap>
+
+    <select id="selectTopUniversitiesHotPage"
+            resultMap="topUniversityListInfo">
+        select *
+        from top_university_school_list as s,top_university_school_image as i
+        where s.school_id=i.school_id
+
+        <if test="province_id != null and province_id != ''">
+            and province_id = #{province_id}
+        </if>
+
+        <if test="school_type != null and school_type != ''">
+            and school_type = #{school_type}
+        </if>
+
+        <if test="type != null and type != ''">
+            and type = #{type}
+        </if>
+
+    </select>
+
+    <select id="selectTopUniversitiesPage" resultMap="topUniversityListInfo">
+        select *
+        from top_university_school_list as s,top_university_school_image as i
+        where s.school_id=i.school_id
+        <if test="keyword != null and keyword != ''">
+            and keyword like "%"#{keyword}"%"
+        </if>
+
+        <if test="f211 != null and f211 != ''">
+            and f211 = #{f211}
+        </if>
+
+        <if test="f985 != null and f985 != ''">
+            and f985 = #{f985}
+        </if>
+
+        <if test="province_id != null and province_id != ''">
+            and province_id = #{province_id}
+        </if>
+
+        <if test="school_type != null and school_type != ''">
+            and school_type = #{school_type}
+        </if>
+
+        <if test="type != null and type != ''">
+            and type = #{type}
+        </if>
+
+
+    </select>
+
+    <select id="selectTopUniversityDetailInfoById" resultMap="topUniversityDetailInfo">
+        select *
+        from top_university_school_detail_info as detail,top_university_school_image as image
+        where detail.school_id = image.school_id
+        and  detail.school_id = #{school_id}
+
+    </select>
+
+
+    <select id="selectTopUniversityDetailMoreInfoById" resultMap="topUniversityListMoreInfo">
+        select *
+        from top_university_school_detail_info_more
         where 1=1
-        <if test="topUniversityName!=null and topUniversityName!=''">
-            AND instr(top_university_name,#{topUniversityName,jdbcType=VARCHAR})&gt;0
+        <if test="school_id != null and school_id != ''">
+            and school_id = #{school_id}
         </if>
     </select>
+
 
 </mapper>

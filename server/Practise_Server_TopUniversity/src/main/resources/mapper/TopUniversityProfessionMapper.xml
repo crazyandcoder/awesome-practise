@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.crazyandcoder.university.mapper.TopUniversityProfessionMapper">
+
+    <resultMap id="topUniversityProfessionListInfo"
+               type="com.crazyandcoder.university.entity.TopUniversityProfessionListInfo">
+        <id column="id" property="id"/>
+        <result column="profession_id" property="professionId"/>
+        <result column="degree" property="degree"/>
+        <result column="level1" property="level1"/>
+        <result column="level2" property="level2"/>
+        <result column="level3" property="level3"/>
+        <result column="level1_name" property="level1Name"/>
+        <result column="level2_name" property="level2Name"/>
+        <result column="level3_name" property="level3Name"/>
+        <result column="limit_year" property="limitYear"/>
+        <result column="name" property="name"/>
+        <result column="rank" property="rank"/>
+        <result column="rank_type" property="rankType"/>
+        <result column="rankall" property="rankall"/>
+        <result column="spcode" property="spcode"/>
+        <result column="special_id" property="specialId"/>
+        <result column="view_month" property="viewMonth"/>
+        <result column="view_total" property="viewTotal"/>
+        <result column="view_week" property="viewWeek"/>
+    </resultMap>
+
+    <resultMap id="topUniversityProfessionDetailInfo"
+               type="com.crazyandcoder.university.entity.TopUniversityProfessionDetailInfo">
+        <id column="id" property="id"/>
+        <result column="code" property="code"/>
+        <result column="continue_exp" property="continue_exp"/>
+        <result column="degree" property="degree"/>
+        <result column="do_what" property="do_what"/>
+        <result column="e_status" property="e_status"/>
+        <result column="heat" property="heat"/>
+        <result column="impress" property="impress"/>
+        <result column="is_what" property="is_what"/>
+        <result column="job" property="job"/>
+        <result column="jobdetail" property="jobdetail"/>
+        <result column="jobrate" property="jobrate"/>
+        <result column="learn_what" property="learn_what"/>
+        <result column="level1" property="level1"/>
+        <result column="level1_name" property="level1_name"/>
+        <result column="level2" property="level2"/>
+        <result column="level3" property="level3"/>
+        <result column="limit_year" property="limit_year"/>
+        <result column="name" property="name"/>
+        <result column="rate" property="rate"/>
+        <result column="sel_adv" property="sel_adv"/>
+        <result column="status" property="status"/>
+        <result column="type" property="type"/>
+        <result column="type_detail" property="type_detail"/>
+
+    </resultMap>
+
+
+    <select id="selectTopUniversitiesProfessionListPage" resultMap="topUniversityProfessionListInfo">
+        select *
+        from top_university_school_profession_list
+        where 1=1
+        <if test="keyword != null and keyword != ''">
+            and keyword like "%"#{keyword}"%"
+        </if>
+        <if test="level1 != null and level1 != ''">
+            and level1 = #{level1}
+        </if>
+
+        <if test="level3 != null and level3 != ''">
+            and level3 = #{level3}
+        </if>
+
+    </select>
+
+    <select id="selectTopUniversitiesProfessionHotListPage" resultMap="topUniversityProfessionListInfo">
+        select *
+        from top_university_school_profession_list_hot
+        where 1=1
+        <if test="level1 != null and level1 != ''">
+            and level1 = #{level1}
+        </if>
+
+
+
+    </select>
+
+    <select id="selectTopUniversityProfessionDetailInfoById" resultMap="topUniversityProfessionDetailInfo">
+        select *
+        from top_university_school_profession_detail_info
+        where profession_id = #{profession_id}
+
+    </select>
+
+
+</mapper>

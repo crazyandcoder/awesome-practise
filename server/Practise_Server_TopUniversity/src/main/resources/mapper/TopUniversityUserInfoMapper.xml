@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.crazyandcoder.university.mapper.TopUniversityUserInfoMapper">
+
+    <resultMap id="treeHoleUserInfo" type="com.crazyandcoder.university.entity.TopUniversityUser">
+        <id column="id" property="id"/>
+        <result column="user_name" property="userName"/>
+        <result column="user_phone" property="userPhone"/>
+        <result column="user_email" property="userEmail"/>
+        <result column="user_nickname" property="userNickName"/>
+        <result column="user_normal_property" property="userNormalPassword"/>
+        <result column="user_password" property="userPassword"/>
+        <result column="user_id" property="userId"/>
+        <result column="user_avatar" property="userAvatar"/>
+        <result column="user_gender" property="userGender"/>
+        <result column="user_age" property="userAge"/>
+        <result column="user_address" property="userAddress"/>
+        <result column="user_city" property="userCity"/>
+        <result column="user_introduction" property="userIntroduction"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <select id="selectUserByName" resultMap="treeHoleUserInfo">
+        select * from top_university_user
+        where 1=1
+        <if test="userName != null and userName != ''">
+            and user_name = #{userName}
+        </if>
+    </select>
+
+    <select id="selectUserByNameAndPassword" resultMap="treeHoleUserInfo">
+        select * from top_university_user
+        where 1=1
+        <if test="userName != null and userName != ''">
+            and user_name = #{userName}
+        </if>
+        <if test="userPassword != null and userPassword != ''">
+            and user_password = #{userPassword}
+        </if>
+    </select>
+
+
+    <select id="selectUserByUserId" resultMap="treeHoleUserInfo">
+        select * from top_university_user
+        where 1=1
+        <if test="userId != null and userId != ''">
+            and user_id = #{userId}
+        </if>
+
+    </select>
+
+
+    <insert id="addUserByName" parameterType="com.crazyandcoder.university.model.req.TopUniversityUserRegisterReq">
+        insert into top_university_user (
+        user_name,
+        user_phone,
+        user_email,
+        user_nickname,
+        user_password,
+        user_normal_property,
+        user_id,
+        user_avatar,
+        user_gender,
+        user_age,
+        user_address,
+        user_city,
+        user_introduction
+        ) values (#{userName},#{userPhone},#{userEmail},#{userNickName},#{userPassword},#{userNormalPassword},
+        #{userId},#{userAvatar},#{userGender},#{userAge},#{userAddress},#{userCity},#{userIntroduction})
+    </insert>
+
+    <update id="updateUserInfo" parameterType="com.crazyandcoder.university.model.req.TopUniversityUserUpdateReq">
+        update top_university_user set user_phone=#{userPhone},
+        user_email=#{userEmail},
+        user_nickname=#{userNickName},
+        user_gender=#{userGender},
+        user_age=#{userAge},
+        user_address=#{userAddress},
+        user_city=#{userCity},
+        user_introduction=#{userIntroduction}
+        where user_id=#{userId}
+    </update>
+
+    <update id="updateUserPwd" parameterType="com.crazyandcoder.university.model.req.TopUniversityUserUpdatePwdReq">
+        update top_university_user set user_normal_property=#{userNormalPassword},
+        user_password=#{userPassword}
+        where user_id=#{userId}
+    </update>
+
+    <select id="selectUserByUserIdAndPwd" resultMap="treeHoleUserInfo">
+        select * from top_university_user
+        where user_id = #{userId}
+            and user_password = #{userPassword}
+
+    </select>
+
+
+</mapper>

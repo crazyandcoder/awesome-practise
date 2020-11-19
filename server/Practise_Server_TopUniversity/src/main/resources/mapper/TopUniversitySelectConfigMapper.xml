@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.crazyandcoder.university.mapper.TopUniversityInfoSelectConfigMapper">
+
+    <resultMap id="topUniversityProvinceInfo"
+               type="com.crazyandcoder.university.entity.TopUniversityProvinceInfo">
+        <id column="id" property="id"/>
+        <result column="province_id" property="provinceId"/>
+        <result column="province_name" property="provinceName"/>
+    </resultMap>
+
+    <resultMap id="topUniversitySchoolTypeInfo"
+               type="com.crazyandcoder.university.entity.TopUniversitySchoolTypeInfo">
+        <id column="id" property="id"/>
+        <result column="school_type_id" property="schoolTypeId"/>
+        <result column="school_type_name" property="schoolTypeName"/>
+
+    </resultMap>
+
+
+    <resultMap id="topUniversityCollegesTypeInfo"
+               type="com.crazyandcoder.university.entity.TopUniversityCollegeTypeInfo">
+        <id column="id" property="id"/>
+        <result column="college_type_id" property="collegeTypeId"/>
+        <result column="college_type_name" property="collegeTypeName"/>
+
+    </resultMap>
+
+    <select id="getProvinceList" resultMap="topUniversityProvinceInfo">
+        select *
+        from top_university_school_provice
+        where 1=1
+    </select>
+
+    <select id="getCollegeTypeList" resultMap="topUniversityCollegesTypeInfo">
+        select *
+        from top_university_school_college_type
+        where 1=1
+    </select>
+
+    <select id="getSchoolTypeList" resultMap="topUniversitySchoolTypeInfo">
+        select *
+        from top_university_school_school_type
+        where 1=1
+
+    </select>
+
+
+</mapper>
